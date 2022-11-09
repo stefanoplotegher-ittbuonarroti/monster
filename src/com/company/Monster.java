@@ -12,9 +12,12 @@ public class Monster {
         this.danno=danno;
     }
 
+    //per subire danni
     public void subisci(int danni){};
 
+    //ritorna l'attributo danno
     public int attacco(){};
 
+    //tostring classico
     public String toString(){};
 }
