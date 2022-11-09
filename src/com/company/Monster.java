@@ -11,4 +11,10 @@ public class Monster {
         this.puntiVita=puntiVita;
         this.danno=danno;
     }
+
+    public void subisci(int danni){};
+
+    public int attacco(){};
+
+    public String toString(){};
 }
