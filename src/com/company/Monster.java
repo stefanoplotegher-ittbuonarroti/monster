@@ -13,11 +13,19 @@ public class Monster {
     }
 
     //per subire danni
-    public void subisci(int danni){};
+    public void subisci(int danni){
+        puntiVita-=danni;
+    };
 
     //ritorna l'attributo danno
-    public int attacco(){};
+    public int attacco(){
+        return danno;
+    };
 
     //tostring classico
-    public String toString(){};
+    public String toString(){
+        String str ="";
+        str="Nome: "+nome;
+        str+="\nPV: "+puntiVita;
+    };
 }
