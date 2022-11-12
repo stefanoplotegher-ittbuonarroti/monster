@@ -17,14 +17,19 @@ public class Main {
             switch (i){
                 case 0:
                     yeti.subisci(gargoyle.attacco());
-                    System.out.println("Marco "+2+" ad Enrico togliendoli "+gargoyle.attacco()+" punti vita.");
+                    System.out.println("Marco "+ gargoyle.getMossa(rand.nextInt(3))+" ad Enrico togliendoli "+gargoyle.attacco()+" punti vita.");
                     break;
                 case 1:
                     gargoyle.subisci(yeti.attacco());
-                    System.out.println("Enrico "+2+" a marco togliendoli "+yeti.attacco()+" punti vita.");
+                    System.out.println("Enrico "+yeti.getMossa(rand.nextInt(3))+" a marco togliendoli "+yeti.attacco()+" punti vita.");
                     break;
             }
         }
-        
+
+        if (yeti.getPuntiVita()<=0){
+            System.out.println("Ha vinto Marco");
+        }else{
+            System.out.println("Ha vinto Enrico");
+        }
     }
 }
