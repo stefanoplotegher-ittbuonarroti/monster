@@ -22,6 +22,10 @@ public class Monster {
         return danno;
     };
 
+    public int getPuntiVita() {
+        return puntiVita;
+    }
+
     //tostring classico
     public String toString(){
         String str ="";
