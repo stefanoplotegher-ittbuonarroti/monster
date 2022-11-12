@@ -5,6 +5,8 @@ public class Monster {
     private int puntiVita;
     private int danno;
 
+    private String [] mosse={"sputa in un occhio","morde l'orecchio","lancia un occhiataccia"};
+
 
     public Monster (String nome, int puntiVita, int danno){
         this.nome=nome;
@@ -24,6 +26,10 @@ public class Monster {
 
     public int getPuntiVita() {
         return puntiVita;
+    }
+
+    public String getMossa(int i){
+        return mosse[i];
     }
 
     //tostring classico
