@@ -27,5 +27,7 @@ public class Monster {
         String str ="";
         str="Nome: "+nome;
         str+="\nPV: "+puntiVita;
+
+        return str;
     };
 }
