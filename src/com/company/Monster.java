@@ -3,15 +3,14 @@ package com.company;
 public class Monster {
     private String nome;
     private int puntiVita;
-    private int danno;
 
     private String [] mosse={"sputa in un occhio","morde l'orecchio","lancia un occhiataccia"};
+    private int [] danni ={15,40,70};
 
 
-    public Monster (String nome, int puntiVita, int danno){
+    public Monster (String nome, int puntiVita){
         this.nome=nome;
         this.puntiVita=puntiVita;
-        this.danno=danno;
     }
 
     //per subire danni
@@ -20,8 +19,8 @@ public class Monster {
     };
 
     //ritorna l'attributo danno
-    public int attacco(){
-        return danno;
+    public int attacco(int i){
+        return danni[i];
     };
 
     public int getPuntiVita() {
