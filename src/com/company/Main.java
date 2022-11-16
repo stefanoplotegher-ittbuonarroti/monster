@@ -19,11 +19,11 @@ public class Main {
                 case 0:
                     attacco= rand.nextInt(3);
                     yeti.subisci(gargoyle.attacco(attacco));
-                    System.out.println("Marco "+ gargoyle.getMossa(attacco)+" ad Enrico togliendoli "+gargoyle.attacco(attacco)+" punti vita.");
+                    System.out.println(gargoyle.getNome()+ gargoyle.getMossa(attacco)+" ad "+yeti.getNome()+" togliendoli "+gargoyle.attacco(attacco)+" punti vita.");
                     break;
                 case 1:
                     gargoyle.subisci(yeti.attacco(attacco));
-                    System.out.println("Enrico "+yeti.getMossa(attacco)+" a marco togliendoli "+yeti.attacco(attacco)+" punti vita.");
+                    System.out.println(yeti.getNome()+yeti.getMossa(attacco)+" a "+gargoyle.getNome()+" togliendoli "+yeti.attacco(attacco)+" punti vita.");
                     break;
             }
         }

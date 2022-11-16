@@ -31,6 +31,10 @@ public class Monster {
         return mosse[i];
     }
 
+    public String getNome() {
+        return nome;
+    }
+
     //tostring classico
     public String toString(){
         String str ="";
