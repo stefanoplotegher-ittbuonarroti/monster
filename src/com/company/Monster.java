@@ -4,13 +4,18 @@ public class Monster {
     private String nome;
     private int puntiVita;
 
-    private String [] mosse={"sputa in un occhio","morde l'orecchio","lancia un occhiataccia"};
-    private int [] danni ={15,40,70};
+    private Weapon arma;
+    arma.setNome("il pugno");
+    arma.setDanni(1);
+
+    private String [] mosse={arma.getNomeArma(),"sputa in un occhio","morde l'orecchio","lancia un occhiataccia"};
+    private int [] danni ={arma.getDanni(),15,40,70};
 
 
-    public Monster (String nome, int puntiVita){
+    public Monster (String nome, int puntiVita, Weapon arma){
         this.nome=nome;
         this.puntiVita=puntiVita;
+        this.arma = arma;
     }
 
     //per subire danni
