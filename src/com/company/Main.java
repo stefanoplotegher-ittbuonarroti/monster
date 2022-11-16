@@ -19,19 +19,19 @@ public class Main {
                 case 0:
                     attacco= rand.nextInt(3);
                     yeti.subisci(gargoyle.attacco(attacco));
-                    System.out.println(gargoyle.getNome()+ gargoyle.getMossa(attacco)+" ad "+yeti.getNome()+" togliendoli "+gargoyle.attacco(attacco)+" punti vita.");
+                    System.out.println(gargoyle.getNome()+" "+gargoyle.getMossa(attacco)+" ad "+yeti.getNome()+" togliendoli "+gargoyle.attacco(attacco)+" punti vita.");
                     break;
                 case 1:
                     gargoyle.subisci(yeti.attacco(attacco));
-                    System.out.println(yeti.getNome()+yeti.getMossa(attacco)+" a "+gargoyle.getNome()+" togliendoli "+yeti.attacco(attacco)+" punti vita.");
+                    System.out.println(yeti.getNome()+" "+yeti.getMossa(attacco)+" a "+gargoyle.getNome()+" togliendoli "+yeti.attacco(attacco)+" punti vita.");
                     break;
             }
         }
 
         if (yeti.getPuntiVita()<=0){
-            System.out.println("Ha vinto Marco");
+            System.out.println("Ha vinto "+gargoyle.getNome());
         }else{
-            System.out.println("Ha vinto Enrico");
+            System.out.println("Ha vinto "+yeti.getNome());
         }
     }
 }
