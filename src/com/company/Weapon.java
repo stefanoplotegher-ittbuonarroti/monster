@@ -16,4 +16,12 @@ public class Weapon {
     public String getNomeArma() {
         return nomeArma;
     }
+
+    public void setDanni(int danni) {
+        this.danni = danni;
+    }
+
+    public void setNomeArma(String nomeArma) {
+        this.nomeArma = nomeArma;
+    }
 }
