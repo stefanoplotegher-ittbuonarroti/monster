@@ -7,7 +7,7 @@ public class Monster {
     private Weapon arma = new Weapon(1,"il pugno");
 
 
-    private String [] mosse={"usa "+arma.getNomeArma(),"sputa in un occhio a ","morde l'orecchio a ","lancia un occhiataccia a"};
+    private String [] mosse={"usa "+arma.getNomeArma()+" su ","sputa in un occhio a ","morde l'orecchio a ","lancia un occhiataccia a"};
     private int [] danni ={arma.getDanni(),15,40,70};
 
 
