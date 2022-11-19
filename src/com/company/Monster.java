@@ -4,7 +4,7 @@ public class Monster {
     private String nome;
     private int puntiVita;
 
-    private Weapon arma;
+    private Weapon arma = new Weapon(1,"il pugno");
 
 
     private String [] mosse={"usa "+arma.getNomeArma(),"sputa in un occhio a ","morde l'orecchio a ","lancia un occhiataccia a"};
@@ -14,8 +14,6 @@ public class Monster {
     public Monster (String nome, int puntiVita){
         this.nome=nome;
         this.puntiVita=puntiVita;
-        arma.setNomeArma("il pugno");
-        arma.setDanni(1);
     }
 
     //per subire danni
