@@ -7,8 +7,8 @@ public class Monster {
     private Weapon arma = new Weapon(1,"il pugno");
 
 
-    private String [] mosse={"usa "+arma.getNomeArma()+" su ","sputa in un occhio a ","morde l'orecchio a ","lancia un occhiataccia a"};
-    private int [] danni ={arma.getDanni(),15,40,70};
+    private String [] mosse={"usa il pugno su ","sputa in un occhio a ","morde l'orecchio a ","lancia un occhiataccia a"};
+    private int [] danni ={1,15,40,70};
 
 
     public Monster (String nome, int puntiVita){
@@ -29,11 +29,15 @@ public class Monster {
     public void raccogliArma(Weapon newArma){
         arma.setDanni(newArma.getDanni());
         arma.setNomeArma(newArma.getNomeArma());
+        mosse[0]="usa "+arma.getNomeArma()+" su ";
+        danni[0]= arma.getDanni();
     }
 
     public void perdiArma(){
         arma.setNomeArma("il pugno");
         arma.setDanni(1);
+        mosse[0]="usa "+arma.getNomeArma()+" su ";
+        danni[0]= arma.getDanni();
     }
 
     public int getPuntiVita() {
